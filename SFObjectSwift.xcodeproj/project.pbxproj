@@ -16,6 +16,13 @@
 		A621AF1B1B46D20A00D31A7A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF151B46D20A00D31A7A /* Result.framework */; };
 		A621AF1C1B46D20A00D31A7A /* SFOAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF161B46D20A00D31A7A /* SFOAuthSwift.framework */; };
 		A621AF1D1B46D20A00D31A7A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF171B46D20A00D31A7A /* SwiftyJSON.framework */; };
+		A621AF231B493F1200D31A7A /* SObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF221B493F1200D31A7A /* SObjectProtocol.swift */; };
+		A621AF291B49412300D31A7A /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF281B49412300D31A7A /* Const.swift */; };
+		A621AF351B494E4000D31A7A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF341B494E4000D31A7A /* Service.swift */; };
+		A621AF371B494E7600D31A7A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF361B494E7600D31A7A /* Client.swift */; };
+		A621AF391B4954BE00D31A7A /* ResponseParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF381B4954BE00D31A7A /* ResponseParserProtocol.swift */; };
+		A621AF3B1B49550400D31A7A /* CreateResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF3A1B49550400D31A7A /* CreateResponseParser.swift */; };
+		A621AF3D1B49560800D31A7A /* QueryResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF3C1B49560800D31A7A /* QueryResponseParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,13 @@
 		A621AF151B46D20A00D31A7A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		A621AF161B46D20A00D31A7A /* SFOAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFOAuthSwift.framework; path = Carthage/Build/iOS/SFOAuthSwift.framework; sourceTree = "<group>"; };
 		A621AF171B46D20A00D31A7A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A621AF221B493F1200D31A7A /* SObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SObjectProtocol.swift; sourceTree = "<group>"; };
+		A621AF281B49412300D31A7A /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A621AF341B494E4000D31A7A /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A621AF361B494E7600D31A7A /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A621AF381B4954BE00D31A7A /* ResponseParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParserProtocol.swift; sourceTree = "<group>"; };
+		A621AF3A1B49550400D31A7A /* CreateResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateResponseParser.swift; sourceTree = "<group>"; };
+		A621AF3C1B49560800D31A7A /* QueryResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryResponseParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				A621AEFB1B46CDD800D31A7A /* SFObjectSwift.h */,
+				A621AF281B49412300D31A7A /* Const.swift */,
+				A621AF341B494E4000D31A7A /* Service.swift */,
+				A621AF361B494E7600D31A7A /* Client.swift */,
+				A621AF3A1B49550400D31A7A /* CreateResponseParser.swift */,
+				A621AF3C1B49560800D31A7A /* QueryResponseParser.swift */,
+				A621AF381B4954BE00D31A7A /* ResponseParserProtocol.swift */,
+				A621AF221B493F1200D31A7A /* SObjectProtocol.swift */,
 				A621AEF91B46CDD800D31A7A /* Supporting Files */,
 			);
 			path = SFObjectSwift;
@@ -233,6 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A621AF231B493F1200D31A7A /* SObjectProtocol.swift in Sources */,
+				A621AF291B49412300D31A7A /* Const.swift in Sources */,
+				A621AF3D1B49560800D31A7A /* QueryResponseParser.swift in Sources */,
+				A621AF371B494E7600D31A7A /* Client.swift in Sources */,
+				A621AF3B1B49550400D31A7A /* CreateResponseParser.swift in Sources */,
+				A621AF391B4954BE00D31A7A /* ResponseParserProtocol.swift in Sources */,
+				A621AF351B494E4000D31A7A /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +375,7 @@
 		A621AF0D1B46CDD800D31A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -360,12 +389,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A621AF0E1B46CDD800D31A7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
