@@ -142,7 +142,7 @@ public class Client<T: SObjectProtocol> {
             "Authorization": "Bearer \(credential.accessToken)"
         ]
         
-        let URLString = "\(credential.instanceURL)/services/data/\(Service.appVersion)/sobjects/\(T.AppName)/)"
+        let URLString = "\(credential.instanceURL)/services/data/\(Service.appVersion)/sobjects/\(T.AppName)"
         let parameters = sObject.toDictionary()
         
         return Alamofire.request(.POST, URLString, parameters: parameters, encoding: .JSON)
@@ -154,7 +154,7 @@ public class Client<T: SObjectProtocol> {
             "Authorization": "Bearer \(credential.accessToken)"
         ]
         
-        let URLString = "\(credential.instanceURL)/services/data/\(Service.appVersion)/sobjects/query)"
+        let URLString = "\(credential.instanceURL)/services/data/\(Service.appVersion)/query"
         
         let fields = ",".join(T.AppFieldNames)
         

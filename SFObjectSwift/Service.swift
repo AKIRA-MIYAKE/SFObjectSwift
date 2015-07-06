@@ -12,6 +12,6 @@ public class Service {
     
     // MARK: - Static variables
     
-    public static var appVersion = "v33.0"
+    public static var appVersion = "v34.0"
     
 }
