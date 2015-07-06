@@ -156,7 +156,7 @@ public class Client<T: SObjectProtocol> {
         
         let URLString = "\(credential.instanceURL)/services/data/\(Service.appVersion)/sobjects/query)"
         
-        let fields = ",".join(T.AppFieldsNames)
+        let fields = ",".join(T.AppFieldNames)
         
         var q = "SELECT \(fields) FROM \(T.AppName)"
         

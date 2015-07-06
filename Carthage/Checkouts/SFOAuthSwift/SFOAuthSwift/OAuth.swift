@@ -143,7 +143,7 @@ public class OAuth {
     
     public static func handleOpenURL(URL: NSURL) {
         if let redirectURL = redirectURL {
-            if URL == redirectURL {
+            if URL.host == redirectURL.host {
                 OAuth2Swift.handleOpenURL(URL)
             }
         }

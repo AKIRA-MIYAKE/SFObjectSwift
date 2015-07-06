@@ -13,7 +13,7 @@ public protocol SObjectProtocol {
     // MARK: - Static variables
     
     static var AppName: String { get }
-    static var AppFieldsNames: [String] { get }
+    static var AppFieldNames: [String] { get }
     
     
     // MARK: - Method
