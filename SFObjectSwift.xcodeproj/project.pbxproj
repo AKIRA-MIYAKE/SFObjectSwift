@@ -14,7 +14,6 @@
 		A621AF191B46D20A00D31A7A /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF131B46D20A00D31A7A /* Box.framework */; };
 		A621AF1A1B46D20A00D31A7A /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF141B46D20A00D31A7A /* OAuthSwift.framework */; };
 		A621AF1B1B46D20A00D31A7A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF151B46D20A00D31A7A /* Result.framework */; };
-		A621AF1C1B46D20A00D31A7A /* SFOAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF161B46D20A00D31A7A /* SFOAuthSwift.framework */; };
 		A621AF1D1B46D20A00D31A7A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621AF171B46D20A00D31A7A /* SwiftyJSON.framework */; };
 		A621AF231B493F1200D31A7A /* SObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF221B493F1200D31A7A /* SObjectProtocol.swift */; };
 		A621AF291B49412300D31A7A /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF281B49412300D31A7A /* Const.swift */; };
@@ -23,6 +22,7 @@
 		A621AF391B4954BE00D31A7A /* ResponseParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF381B4954BE00D31A7A /* ResponseParserProtocol.swift */; };
 		A621AF3B1B49550400D31A7A /* CreateResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF3A1B49550400D31A7A /* CreateResponseParser.swift */; };
 		A621AF3D1B49560800D31A7A /* QueryResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A621AF3C1B49560800D31A7A /* QueryResponseParser.swift */; };
+		A6F1296E1B4AD7C10025B8AC /* SFOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1296D1B4AD7C10025B8AC /* SFOAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		A621AF131B46D20A00D31A7A /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
 		A621AF141B46D20A00D31A7A /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		A621AF151B46D20A00D31A7A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		A621AF161B46D20A00D31A7A /* SFOAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFOAuthSwift.framework; path = Carthage/Build/iOS/SFOAuthSwift.framework; sourceTree = "<group>"; };
 		A621AF171B46D20A00D31A7A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		A621AF221B493F1200D31A7A /* SObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SObjectProtocol.swift; sourceTree = "<group>"; };
 		A621AF281B49412300D31A7A /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		A621AF381B4954BE00D31A7A /* ResponseParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseParserProtocol.swift; sourceTree = "<group>"; };
 		A621AF3A1B49550400D31A7A /* CreateResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateResponseParser.swift; sourceTree = "<group>"; };
 		A621AF3C1B49560800D31A7A /* QueryResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryResponseParser.swift; sourceTree = "<group>"; };
+		A6F1296D1B4AD7C10025B8AC /* SFOAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFOAuth.framework; path = Carthage/Build/iOS/SFOAuth.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F1296E1B4AD7C10025B8AC /* SFOAuth.framework in Frameworks */,
 				A621AF181B46D20A00D31A7A /* Alamofire.framework in Frameworks */,
 				A621AF191B46D20A00D31A7A /* Box.framework in Frameworks */,
 				A621AF1A1B46D20A00D31A7A /* OAuthSwift.framework in Frameworks */,
 				A621AF1B1B46D20A00D31A7A /* Result.framework in Frameworks */,
-				A621AF1C1B46D20A00D31A7A /* SFOAuthSwift.framework in Frameworks */,
 				A621AF1D1B46D20A00D31A7A /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,11 +85,11 @@
 		A621AEEC1B46CDD800D31A7A = {
 			isa = PBXGroup;
 			children = (
+				A6F1296D1B4AD7C10025B8AC /* SFOAuth.framework */,
 				A621AF121B46D20A00D31A7A /* Alamofire.framework */,
 				A621AF131B46D20A00D31A7A /* Box.framework */,
 				A621AF141B46D20A00D31A7A /* OAuthSwift.framework */,
 				A621AF151B46D20A00D31A7A /* Result.framework */,
-				A621AF161B46D20A00D31A7A /* SFOAuthSwift.framework */,
 				A621AF171B46D20A00D31A7A /* SwiftyJSON.framework */,
 				A621AEF81B46CDD800D31A7A /* SFObjectSwift */,
 				A621AF051B46CDD800D31A7A /* SFObjectSwiftTests */,

@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 import Result
-import SFOAuthSwift
+import SFOAuth
 import SwiftyJSON
 
 public typealias Id = String
