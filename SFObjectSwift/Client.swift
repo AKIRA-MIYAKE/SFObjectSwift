@@ -37,7 +37,7 @@ public class Client<T: SObjectProtocol> {
     
     // MARK: - Public method
     
-    public func create(sObject: T, completion: Result<Id, NSError> -> Void) {
+    public func create(sObject: T, _ completion: Result<Id, NSError> -> Void) {
         typealias CreateResut = Result<Id, NSError>
         
         if let credentail = OAuth.credentialStore.credential {
@@ -55,7 +55,7 @@ public class Client<T: SObjectProtocol> {
                                 OAuth.refresh { result in
                                     switch result {
                                     case .Success(let box):
-                                        self.create(sObject, completion: completion)
+                                        self.create(sObject, completion)
                                     case .Failure(let box):
                                         let result = CreateResut.failure(box.value)
                                         completion(result)
@@ -78,7 +78,7 @@ public class Client<T: SObjectProtocol> {
         }
     }
     
-    public func query(#options: String?, completion: Result<[T], NSError> -> Void) {
+    public func query(#options: String?, _ completion: Result<[T], NSError> -> Void) {
         typealias QueryResult = Result<[T], NSError>
         
         if let credential = OAuth.credentialStore.credential {
@@ -96,7 +96,7 @@ public class Client<T: SObjectProtocol> {
                                 OAuth.refresh { result in
                                     switch result {
                                     case .Success(let box):
-                                        self.query(options: options, completion: completion)
+                                        self.query(options: options, completion)
                                     case .Failure(let box):
                                         let result = QueryResult.failure(box.value)
                                         completion(result)

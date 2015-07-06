@@ -14,6 +14,8 @@ public class CreateResponseParser: ResponseParserProtocol {
     
     public typealias T = Id
     
+    public init() {}
+    
     public func parse(data: AnyObject) -> Result<T, NSError> {
         typealias CreateResult = Result<T, NSError>
         

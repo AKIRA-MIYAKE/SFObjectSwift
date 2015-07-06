@@ -13,6 +13,8 @@ public class QueryResponseParser<Object>: ResponseParserProtocol {
     
     public typealias T = [Object]
     
+    public init() {}
+    
     public func parse(data: AnyObject) -> Result<T, NSError> {
         typealias QueryResult = Result<T, NSError>
         
